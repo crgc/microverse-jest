@@ -1,23 +1,21 @@
 class Calculator {
-  constructor() {}
-  
-  add(a, b) {
+  add(a, b) { /* eslint-disable-line class-methods-use-this */
     return a + b;
   }
 
-  substract(a, b) {
+  substract(a, b) { /* eslint-disable-line class-methods-use-this */
     return a - b;
   }
 
-  divide(a, b) {
-    if(b == 0) {
-      throw 'Cannot divide by 0'
+  divide(a, b) { /* eslint-disable-line class-methods-use-this */
+    if (b === 0) {
+      throw new Error('Cannot divide by 0');
     }
 
     return a / b;
   }
 
-  multiply(a, b) {
+  multiply(a, b) { /* eslint-disable-line class-methods-use-this */
     return a * b;
   }
 }
