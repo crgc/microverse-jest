@@ -59,7 +59,7 @@ describe('returns the product of two numbers', () => {
     expect(calc.multiply(1, 1)).toBe(1);
   });
 
-  test('multiplies 2 * 2 to equal 2', () => {
+  test('multiplies 2 * 2 to equal 4', () => {
     expect(calc.multiply(2, 2)).toBe(4);
   });
 });
