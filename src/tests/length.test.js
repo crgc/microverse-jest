@@ -1,10 +1,6 @@
 const length = require('../length');
 
-test('returns the length of a given string', () => {
-  expect(length('Logo')).toBe(4);
-});
-
-describe('matching cities to foods', () => {
+describe('returns the length of a given string', () => {
   test('a string of fewer than 1 character throws an Error', () => {
     expect(() => length('')).toThrow();
   });
